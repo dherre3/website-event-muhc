@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="David Herrera">
+				<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		
+		<link rel="stylesheet" href="./css/index.css" />
+		
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+				
+				
+				
+		<link rel="stylesheet" href="./lib/styles/css/font_awesome/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="./lib/styles/css/ionicons/css/ionicons.min.css">
+  	
+  	<!--ngAnimate -->
+  	<script src="./lib/bower_components/angular-animate/angular-animate.js"></script>
+  	
+	</head>
+
+	<body ng-app="MUHCEvents" >
+		<div ng-controller="SinglePageController">
+			
+<div class="modalOnsen" ng-show="showMenu">
+  <div class="modal__contentOnsen">
+  	<div class="my-closeMenu" >
+		<a href ng-click="closeModal()"><i class="ion-close-round custom-icon"></i></a>	
+	</div>
+  	<ul class="nav nav-pills nav-stacked">
+  		<li style="height:40px"><strong>Menu</strong></li>
+  		<li ng-repeat="x in [1,2,3,4,5]" role="presentation"><a href ng-click="gotoAnchor(x)">{{menuOptions[$index]}}</a></li>
+	</ul>
+  </div>
+</div>
+<div class="open-menu">
+	<div style="margin-left:20px" >
+		<a href ng-click="openModal()"><i class="ion-navicon-round custom-icon"></i></a>	
+	</div>
+</div>
+<div id="anchor1" class="anchor">
+	
+
+	<div class='image'></div>
+	<div class='content' align="center">
+		<div class="panel panel-default myPanel ">
+		<div class="panel-body" >
+			<div align="center" >
+			<h1>Welcome to My Website</h1>
+		</div>
+		</div>
+	</div>
+		
+		
+</div>
+
+ 
+</div>
+<div id="anchor2" class="anchor">
+	
+
+	<div class='image'></div>
+	<div class='content' align="center">
+		<div class="panel panel-default myPanel ">
+		<div class="panel-body" >
+			<div align="center" >
+			<a href ng-click="openModal()">Open Me!</a>
+		
+		Here is Your solution!!! :-)
+		
+		anchor 2
+		</div>
+		</div>
+	</div>
+		
+		
+</div>
+
+ 
+</div>
+<div id="anchor3" class="anchor">
+	
+
+	<div class='image'></div>
+	<div class='content' align="center">
+		<div class="panel panel-default myPanel ">
+		<div class="panel-body" >
+			<div align="center" >
+			<a href ng-click="openModal()">Open Me!</a>
+		
+		Here is Your solution!!! :-)
+		
+		anchor 3
+		</div>
+		</div>
+	</div>
+		
+		
+</div>
+
+ 
+</div>
+<div id="anchor4" class="anchor">
+	
+
+	<div class='image'></div>
+	<div class='content' align="center">
+		<div class="panel panel-default myPanel ">
+		<div class="panel-body" >
+			<div align="center" >
+			<a href ng-click="openModal()">Open Me!</a>
+		
+		Here is Your solution!!! :-)
+		
+		anchor 4
+		</div>
+		</div>
+	</div>
+		
+		
+</div>
+
+ 
+</div>
+<div id="anchor5" class="footerAnchor">
+	
+
+	<div class='footerAnchorImage'></div>
+	<div class='content' align="center">
+		<div class="container ">
+
+			<p>e-mail:davidfherrerar@gmail.com</p>
+			<p>Github: dherre3</p>
+			<footer  align="center">
+				
+				<p>
+					By David Herrera
+				</p>
+			</footer>
+	
+		</div>
+	</div>
+		
+		
+</div>
+
+ 
+</div>
+
+			
+			
+			
+		</div>
+				
+
+		<script src="./js/ancho.js"></script>
+	</body>
+</html>
