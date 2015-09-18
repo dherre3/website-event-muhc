@@ -83,9 +83,19 @@
 		<div class="panel panel-default myPanel ">
 		<div class="panel-body" >
 			<div align="center" >
-			<a href ng-click="openModal()">Open Me!</a>
-		
-		Here is Your solution!!! :-)
+<div class="row">
+	<div class="col-lg-4">
+		<ul class="nav nav-pills nav-stacked">
+  			<li style="height:40px"><strong>Menu</strong></li>
+  			<li ng-repeat="x in [1,2,3,4,5]" role="presentation"><a href ng-click="gotoAnchor(x)">{{menuOptions[$index]}}</a></li>
+		</ul>
+	</div>
+	<div class="col-lg-8">
+		<div class="embed-responsive embed-responsive-16by9">
+		    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+		</div>
+	</div>
+</div>
 		
 		anchor 2
 		</div>
@@ -146,16 +156,17 @@
 
 	<div class='footerAnchorImage'></div>
 	<div class='content' align="center">
-		<div class="container ">
-
-			<p>e-mail:davidfherrerar@gmail.com</p>
-			<p>Github: dherre3</p>
-			<footer  align="center">
-				
-				<p>
-					By David Herrera
+		<div class="container " style="margin-top:30px;font-size:20px">
+			
+			<p><a href="https://ca.linkedin.com/pub/david-herrera/91/74b/489"><i class="ion-social-linkedin custom-icon"></i>  David Herrera</a></p>
+			<p><a href="https://ca.linkedin.com/pub/david-herrera/91/74b/489"><i class="ion-ios-email-outline custom-icon"></i>  davidfherrerar@gmail.com</a></p>
+			<p><a href="https://ca.linkedin.com/pub/david-herrera/91/74b/489"><i class="ion-social-github custom-icon"></i> dherre3</a></p>
+			<br>
+			
+			<p>
+					 By David Herrera
 				</p>
-			</footer>
+
 	
 		</div>
 	</div>
