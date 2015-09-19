@@ -1,3 +1,5 @@
+
+
 p a:hover {
     color: #FF00FF;
     text-decoration:none;
@@ -74,7 +76,36 @@ body{
 	height:80%;
 	
 }
-  .image {
+.imageVideos{
+	 background-image: url('https://www.oist.jp/sites/default/files/photos/20130610_cmb2013_DSC_0187.jpg');
+
+      background-size: cover;
+
+      background-color: purple;
+}
+
+.imageHome{
+	background-image: url('https://muhc.ca/sites/default/files/Glen%20Panotamic.jpg');
+
+    background-size: cover;
+
+    background-color: purple;
+}
+.imagePastWinners{
+	background-image: url('http://wpmedia.montrealgazette.com/2015/04/montreal-que-april-7-2015-strong-graphic-lines-and-br1.jpg?quality=55&strip=all&w=840&h=630&crop=1');
+
+    background-size: cover;
+
+    background-color: purple;
+}
+.imageApplication{
+	background-image: url('https://muhc.ca/sites/default/files/Cedars%20Cancer%20Centre_exterior_Block%20D_4.JPG');
+
+    background-size: cover;
+
+    background-color: purple;
+}
+.image {
 
       position: absolute;
 
@@ -82,18 +113,17 @@ body{
 
       height: 100%;
 
-      background-image: url('https://muhc.ca/sites/default/files/Glen%20Panotamic.jpg');
-
-      background-size: cover;
-
-      background-color: purple;
+     
       z-index:0;
 
-    }
+}
+
 	.myPanel{
 		margin-top:10vh;
 		width:80vw;
-		height:80vh;	
+		height:80vh;
+		background-color:transparent;	
+		z-index: 1;
 	}
     .content {
 	
@@ -179,7 +209,71 @@ body{
   color: #fff;
   white-space: normal;
 }
-
+   .modalHome {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  white-space: nowrap;
+  overflow: hidden;
+  word-spacing: 0;
+  padding: 0;
+  margin: 10vh 0 0 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80vw;
+  height: 80vh;
+  display: table;
+  z-index: 2147483647;
+}
+.modal__contentHome{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  white-space: nowrap;
+  overflow: hidden;
+  word-spacing: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  white-space: normal;
+}
 
 
 
@@ -221,4 +315,17 @@ body{
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
   }
+}
+
+.transparency{
+  background:white;
+  margin-top:10vh;
+  width:80vw;
+ height:80vh;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+  filter: alpha(opacity=80);  /* IE 5-7 */
+  -moz-opacity: 0.8;          /* Netscape */
+  -khtml-opacity: 0.8;        /* Safari 1.x */
+  opacity: 0.8;  
+  z-index:0;
 }

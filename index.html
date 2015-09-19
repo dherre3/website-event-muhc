@@ -59,13 +59,18 @@
 </div>
 <div id="anchor1" class="anchor">
 	
-
-	<div class='image'></div>
+	 
+	<div class='image imageHome'></div>
 	<div class='content' align="center">
-		<div class="panel panel-default myPanel ">
-		<div class="panel-body" >
+		
+		<div class="modalHome">
+  			<div class="modal__contentHome">
 			<div align="center" >
-			<h1>Welcome to My Website</h1>
+			<h1>Welcome to the Glen Research Page</h1>
+			<h4>Next event:</h4>
+			<p>Friday, October 20, 2015</p>
+			<p>Research Symposium Graduate students in Radiotion Oncology</p>
+			<button  class="btn btn-primary" ng-click="registerToEvent()">Register</button>
 		</div>
 		</div>
 	</div>
@@ -78,7 +83,7 @@
 <div id="anchor2" class="anchor">
 	
 
-	<div class='image'></div>
+	<div class='image imageVideos'></div>
 	<div class='content' align="center">
 		<div class="panel panel-default myPanel ">
 		<div class="panel-body" >
@@ -86,13 +91,23 @@
 <div class="row">
 	<div class="col-lg-4">
 		<ul class="nav nav-pills nav-stacked">
-  			<li style="height:40px"><strong>Menu</strong></li>
-  			<li ng-repeat="x in [1,2,3,4,5]" role="presentation"><a href ng-click="gotoAnchor(x)">{{menuOptions[$index]}}</a></li>
+  			<li ><strong>Past Talks</strong></li>
+  			<li style="height:40px;text-align:left" ng-repeat="x in [1,2,3,4,5]" role="presentation"><a href ng-click="gotoAnchor(x)">{{menuOptions[$index]}}</a></li>
 		</ul>
 	</div>
 	<div class="col-lg-8">
+		<h3>Interstellar trailer 3</h3>
+		<div class="col-lg-10" align="center">
 		<div class="embed-responsive embed-responsive-16by9">
 		    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+		</div>
+		</div>
+		<div style="text-align:left">
+		<h4>Presentations:</h4>
+		<p>Lorem ipsum dolor sit amet, sea ad aliquip numquam patrioque, ex quo unum melius reprimique.
+			 Oblique repudiare abhorreant eos id, ei sit nobis reprimique, eam ut volumus reformidans.
+			  Malis harum minimum cum cu, ut everti lobortis sit, eius diceret aliquando vix ne.
+			 No idque munere putent vel, sit no fabulas mandamus. Ad iudico salutatus vis, te omnes maiorum his.</p>
 		</div>
 	</div>
 </div>
@@ -110,7 +125,7 @@
 <div id="anchor3" class="anchor">
 	
 
-	<div class='image'></div>
+	<div class='image imagePastWinners'></div>
 	<div class='content' align="center">
 		<div class="panel panel-default myPanel ">
 		<div class="panel-body" >
@@ -131,17 +146,23 @@
 </div>
 <div id="anchor4" class="anchor">
 	
-
-	<div class='image'></div>
+	
+	<div class='image imageApplication'></div>
 	<div class='content' align="center">
 		<div class="panel panel-default myPanel ">
 		<div class="panel-body" >
-			<div align="center" >
-			<a href ng-click="openModal()">Open Me!</a>
+			<div class="row">
+				<div class="col-xs-4">
+					<h3>List of Upcoming Events</h3>
+				</div>
+				<div class="col-xs-8">
+					
+					
+				</div>
+				
+			</div>
 		
-		Here is Your solution!!! :-)
 		
-		anchor 4
 		</div>
 		</div>
 	</div>

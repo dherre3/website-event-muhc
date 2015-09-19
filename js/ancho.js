@@ -5,7 +5,7 @@ events.run(['$anchorScroll', function($anchorScroll) {
 events.controller('SinglePageController',['$anchorScroll', '$location', '$scope',
   function ($anchorScroll, $location, $scope) {
 	
-	$scope.menuOptions=['Home', 'Videos','Calendar', 'Awards & Certificates', 'Contact'];
+	$scope.menuOptions=['Home', 'Past Events','Awards', 'Attend Events', 'Contact'];
 	
 	$scope.showMenu=false;
 	$location.hash('anchor' + 1);
@@ -16,7 +16,7 @@ events.controller('SinglePageController',['$anchorScroll', '$location', '$scope'
 		$scope.showMenu=true;
 	}
 	$scope.gotoAnchor = function(x) {
-		$scope.showMenu=false
+		$scope.showMenu=false;
       var newHash = 'anchor' + x;
       if ($location.hash() !== newHash) {
         // set the $location.hash to `newHash` and
@@ -27,6 +27,11 @@ events.controller('SinglePageController',['$anchorScroll', '$location', '$scope'
         // since $location.hash hasn't changed
         $anchorScroll();
       }
+    };
+    
+    $scope.registerToEvent=function(){
+        $location.hash('anchor' + 4);
+        $anchorScroll();
     };
 	
 	
