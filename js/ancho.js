@@ -10,9 +10,11 @@ events.controller('SinglePageController',['$anchorScroll', '$location', '$scope'
 	$scope.showMenu=false;
 	$location.hash('anchor' + 1);
 	$scope.closeModal=function(){
+		$scope.rotateClass="animated fadeInDown";
 		$scope.showMenu=false;
 	}
 	$scope.openModal=function(){
+		$scope.rotateClass="animated fadeOutUp";
 		$scope.showMenu=true;
 	}
 	$scope.gotoAnchor = function(x) {
@@ -27,6 +29,7 @@ events.controller('SinglePageController',['$anchorScroll', '$location', '$scope'
         // since $location.hash hasn't changed
         $anchorScroll();
       }
+      $scope.rotateClass="animated fadeInDown";
     };
     
     $scope.registerToEvent=function(){
